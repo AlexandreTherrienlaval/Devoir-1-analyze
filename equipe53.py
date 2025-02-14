@@ -30,3 +30,8 @@ print(f'dd =\n{dd}\n')
 print(f'x =\n{x}\n')
 print(f'N =\n{N}\n')
 
+
+plt.matshow(N)
+plt.title("Matrice N")
+plt.show()
+
