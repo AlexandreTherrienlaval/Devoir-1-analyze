@@ -81,3 +81,7 @@ plt.ylabel('Erreur absolue')
 plt.title("Erreur absolue de l'approximation de f(x) en fonction de h")
 plt.show()
 
+
+
+''' QUESTION 4 '''
+
