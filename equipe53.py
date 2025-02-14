@@ -16,7 +16,7 @@ dd = np.linalg.det(M)
 x = np.linalg.solve(M, a)
 M_transpose = np.transpose(M) ; N = np.linalg.solve(M, M_transpose)
 
-'''print(a)
+print(a)
 print(b)
 print(c)
 print(d)
@@ -29,23 +29,23 @@ print(dd)
 print(x)
 print(M_transpose)
 
-plt.matshow(N)
+figure_1 = plt.matshow(N)
 plt.title('Matrice N')
 plt.show()
 
 def f(x):
     return -1 * (x**2)/2 + np.exp(x) + np.sin(x)
 x = np.linspace(0, 1, 101)
-plt.plot(x, f(x))
+figure_2 = plt.plot(x, f(x))
 plt.title('f(x) = -x^2/2 + exp(x) + sin(x)')
-plt.show()'''
+plt.show()
 
 
 def S(n):
     return suiteSn(19)[n]
 
 x = [i for i in range(1,20)]
-plt.plot(x, S(x), 'o')
+figure_3 = plt.plot(x, S(x), 'o')
 plt.xlabel('S')
 plt.ylabel('n')
 plt.ylabel('S en fonction de n')
