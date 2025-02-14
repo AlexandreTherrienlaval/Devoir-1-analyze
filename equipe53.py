@@ -38,7 +38,7 @@ def f(x):
 x = np.linspace(0, 1, 101)
 plt.plot(x, f(x))
 plt.title('f(x) = -x^2/2 + exp(x) + sin(x)')
-plt.show()
+plt.show()'''
 
 
 def S(n):
@@ -49,7 +49,7 @@ plt.plot(x, S(x), 'o')
 plt.xlabel('S')
 plt.ylabel('n')
 plt.ylabel('S en fonction de n')
-plt.show()'''
+plt.show()
 
 
 
