@@ -78,7 +78,7 @@ for i in range(-1, -7, -1):
 figure_4 = plt.loglog(h, abs(fprime(0) - D(0, h)))
 plt.xlabel('h')
 plt.ylabel('Erreur absolue')
-plt.title("Erreur absolue de l'approximation de f(x) en fonction de h")
+plt.title("Erreur absolue de l'approximation de f'(x) en fonction de h")
 plt.show()
 
 
