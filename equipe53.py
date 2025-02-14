@@ -4,6 +4,7 @@ from suiteSn import suiteSn
 from math import e
 
 
+
 ''' QUESTION 1 '''
 
 a = np.full((6,1), 1)
@@ -49,10 +50,11 @@ x = np.linspace(0, 1, 101)
 
 '''
 figure_2 = plt.plot(x, f(x))
-plt.title('f(x) = -x^2/2 + exp(x) + sin(x)')
+plt.title('f(x) = -x²/2 + e^x + sin(x)')
 plt.show()
 
 '''
+
 
 
 ''' QUESTION 2 '''
@@ -72,6 +74,7 @@ plt.show()
 '''
 
 
+
 ''' QUESTION 3 '''
 
 def fprime(x):
@@ -81,13 +84,14 @@ def D(x, h):
     return (f((x+h)) - f(x))/h
 
 h = np.array([])
-for i in range(-6,-0):
-    h= np.append(h, 10**i)
+for i in range(-1, -7, -1):
+    h = np.append(h, 10**i)
 
-
-Figure = plt.loglog(h, abs(fprime(0) - D(0,h) ))
-plt.ylabel('Erreur absolue')
+'''
+figure_4 = plt.loglog(h, abs(fprime(0) - D(0,h)))
 plt.xlabel('h')
-plt.title('''Erreur absolue de l'approximation de f(x) selon h''')
+plt.ylabel('Erreur absolue')
+plt.title("Erreur absolue de l'approximation de f(x) en fonction de h")
 plt.show()
+'''
 
