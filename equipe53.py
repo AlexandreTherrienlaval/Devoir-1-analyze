@@ -44,6 +44,8 @@ x = np.linspace(0, 1, 101)
 
 figure_2 = plt.plot(x, f(x))
 plt.title('f(x) = -x²/2 + e^x + sin(x)')
+plt.xlabel('x')
+plt.ylabel('f(x)')
 plt.show()
 
 
@@ -83,5 +85,16 @@ plt.show()
 
 
 
-''' QUESTION 4 '''
+''' QUESTION 4 (je fais ca là)''' 
+
+def P2(x):
+    return 1 + 2 * x
+
+x = np.array([0.1, 0.05, 0.01, 0.005, 0.001])
+figure_5 = plt.loglog(x, abs(f(x)- P2(x)))
+plt.xlabel('x')
+plt.ylabel('Erreur absolue')
+plt.title("Erreur absolue de l'approximation de f(x) autour de x0 = 0 en fonction de x")
+plt.show()
+
 
