@@ -85,7 +85,7 @@ plt.show()
 
 
 
-''' QUESTION 4 (je fais ca là)''' 
+''' QUESTION 4 ''' 
 
 def P2(x):
     return 1 + 2 * x
@@ -96,5 +96,3 @@ plt.xlabel('x')
 plt.ylabel('Erreur absolue')
 plt.title("Erreur absolue de l'approximation de f(x) autour de x0 = 0 en fonction de x")
 plt.show()
-
-
